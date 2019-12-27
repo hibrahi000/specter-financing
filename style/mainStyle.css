@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+body {
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	padding: 0;
+	/* display: grid; */
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0.75rem, 0;
+}
+
+/* ++ Utility Classes */
+
+.text-primary {
+	color: rgba(102, 191, 0, 1);
+}
+
+.bg-light {
+	background: white;
+	color: #1d1e23;
+}
+
+.bg-dark {
+	background: #1d1e23;
+	color: white;
+}
+
+.l-heading {
+	font-size: 3rem;
+	margin-bottom: .55rem;
+	line-height: .9;
+}
+
+.m-heading {
+	font-size: 2rem;
+	margin-bottom: .55rem;
+	line-height: .9;
+}
+
+.lead {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+
+.py-1 {
+	padding: 1.5rem 0;
+}
+.py-2 {
+	padding: 2rem 0;
+}
+.py-3 {
+	padding: 3rem 0;
+}
+.py-4 {
+	padding: 4rem 0;
+}
+
+.p-1 {
+	padding: 1.5rem;
+}
+.p-2 {
+	padding: 2rem;
+}
+.p-3 {
+	padding: 3rem;
+}
+.p-4 {
+	padding: 4rem;
+}
+
+.btn {
+	display: inline-block;
+	color: white;
+	background: rgba(102, 191, 0, 1);
+	padding: .5rem 2rem;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background: rgb(133, 205, 51);
+}
+
+.btn-dark {
+	color: white;
+	background: #1d1e23;
+}
+
+.list{
+    margin: .5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+.container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* ++ Nav Bar */
+#navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	background: #1d1e23;
+	/* linear-gradient(-247.0147700394142deg, rgba(12, 20, 2,1) 38.92261904761905%,rgba(12, 20, 2,1) 39.02728174603175%,rgba(22, 41, 1,1) 55.0406746031746%,rgba(32, 59, 1,1) 64.04166666666667%,rgba(45, 84, 0,1) 78.58978174603175%,rgba(57, 105, 2,1) 87.06746031746032%,rgba(57, 105, 2,1) 89.16071428571429%); */
+	color: white;
+	justify-content: space-between;
+	z-index: 1;
+	padding: 1rem;
+}
+
+#navbar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+#navbar ul li a {
+	color: white;
+	padding: 0.75rem;
+	margin: 0, 0.25rem;
+}
+#navbar ul li a:hover {
+	background: rgba(107, 194, 14, 0.639);
+	border-radius: 5px;
+}
+
+/* ** ShowCase ** */
+#showcase {
+	background: #333333 url('../img/showcase.jpg') no-repeat center center/cover;
+	height: 100vh;
+	color: white;
+}
+
+#showcase .showcase-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	height: 100%;
+	padding: 0 2rem;
+
+	/* ___overlay */
+	position: absolute;
+	top: 102px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ** Section What we do */
+#what .items {
+	display: flex;
+	padding: 2rem;
+}
+
+#what .items .item {
+	flex: 1;
+	text-align: center;
+	padding: 1rem;
+}
+
+#what .items .item i {
+	background: rgba(102, 191, 0, 1);
+	padding: 1rem;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+
+/* ** Section Who we are */
+
+#who {
+	display: flex;
+}
+
+#who div {
+	flex: 1;
+}
+
+#who .who-img {
+	background: url('../img/people.jpg') no-repeat center center/cover;
+}
