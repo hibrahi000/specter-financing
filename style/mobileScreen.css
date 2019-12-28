@@ -1,0 +1,65 @@
+#what .items {
+	display: block;
+	padding: 1rem;
+}
+
+/* Align icon to left  */
+#what .items .item {
+	display: flex;
+	text-align: left;
+}
+
+/* Positioning icon */
+#what .items .item i {
+	margin-right: 1.3rem;
+	align-self: center;
+	margin-bottom: 0;
+}
+
+/* SmartPhons */
+
+@media (max-width: 500px) {
+	#navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+	#navar ul {
+		margin-right: 2rem;
+	}
+	#navBar .logo {
+		margin-bottom: 1.0rem;
+		text-align: center;
+	}
+
+	#who {
+		display: block;
+	}
+	#who .who-img {
+		display: none;
+	}
+
+	#clients .items {
+		display: flex;
+	}
+	#clients .items div {
+		width: 100%;
+	}
+
+	#clients .items div:first-child,
+	#clients .items div:last-child {
+		display: none;
+    }
+    
+    #contact .map, #contact .contact-form {
+        flex: auto;
+    }
+
+	#contact {
+        flex-direction: column;
+        
+	}
+	#contact .map {
+        height: 300px;
+
+	}
+}

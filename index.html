@@ -36,7 +36,7 @@
             </h1>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus ullam,
                 consequatur voluptatem cum reprehenderit.</p>
-            <a href="#what" class="btn">Read More</a>
+            <a href="#what" class="btn btn-primary">Read More</a>
         </div>
 
     </header>
@@ -48,29 +48,32 @@
                 <span class="text-primary">
                     What
                 </span>We Do </h2>
-                <div class="items">
-                    <div class="item">
-                        <i class="fas fa-hand-holding-usd fa-2x"></i>
-                        <div>
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-hand-holding-usd fa-2x"></i>
+                    <div>
                         <h3>Investment Banking</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorem fugiat exercitationem repellendus ipsam.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <i class="fab fa-centos fa-2x"></i>
-                        <div>
-                            <h3>Portfolio Managment</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorem fugiat exercitationem repellendus ipsam.</p>
-                            </div>
-                    </div>
-                    <div class="item">
-                        <i class="fab fa-acquisitions-incorporated fa-2x"></i>
-                        <div>
-                            <h3>Tax & Tutelar</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorem fugiat exercitationem repellendus ipsam.</p>
-                            </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorem fugiat exercitationem
+                            repellendus ipsam.</p>
                     </div>
                 </div>
+                <div class="item">
+                    <i class="fab fa-centos fa-2x"></i>
+                    <div>
+                        <h3>Portfolio Managment</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorem fugiat exercitationem
+                            repellendus ipsam.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <i class="fab fa-acquisitions-incorporated fa-2x"></i>
+                    <div>
+                        <h3>Tax & Tutelar</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque dolorem fugiat exercitationem
+                            repellendus ipsam.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -93,22 +96,65 @@
         </div>
     </section>
 
-    <!--  ++ CLients we suports -->
+    <!--  ++ Section: Clients we suports -->
     <section id="clients" class="py-1">
         <div class="container">
             <h2 class="m-heading text-center">
                 <span class="text-primary">Our </span>Clients
             </h2>
             <div class="items py-1">
-                <div><img src="./img/logos/logo1.png" alt="Client"></div>
-                <div><img src="./img/logos/logo2.png" alt="Client"></div>
-                <div><img src="./img/logos/logo3.png" alt="Client"></div>
-                <div><img src="./img/logos/logo4.png" alt="Client"></div>
-                <div><img src="./img/logos/logo5.png" alt="Client"></div>
-
+                <div class="client-grey"><img src="./img/logos/logo5.png" alt="Client"></div>
+                <div class="client-grey"><img src="./img/logos/logo2.png" alt="Client"></div>
+                <div class="client-grey"><img src="./img/logos/logo3.png" alt="Client"></div>
+                <div class="client-grey"><img src="./img/logos/logo4.png" alt="Client"></div>
+                <div class="client-grey"><img src="./img/logos/logo1.png" alt="Client"></div>
             </div>
         </div>
     </section>
+
+
+    <!-- ++ Section: Contact Us  -->
+    <section class="" id="contact">
+        <div class="contact-form bg-dark p-2">
+            <h2 class="m-heading">Contact Us</h2>
+            <p>Please use the following Form To contact us </p>
+
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone #</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-neutral">
+            </form>
+        </div>
+        <div class="map">
+            1
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- ++ main script file -->
+    <script src="./scripts/mainScripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxWZkS3AeskbVOcDVpRTUQr85y5891rBc&callback=initMap"
+        async defer></script>
+
 </body>
+
+<footer id="main-footer" class='bg-dark text-center mg-top-1 py-half'>
+    <p>Copyright &copy; 2019, Specter Financing, All Rights Reserved </p>
+</footer>
 
 </html>
